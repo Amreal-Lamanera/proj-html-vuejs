@@ -30,6 +30,21 @@ img {
     max-width: 100%;
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.25;
+}
+
+h4 {
+    margin-bottom: 1.75rem;
+    font-size: 0.75rem;
+}
+
+p {
+    margin: 2.5rem 0;
+}
+
 .my_btn {
     padding: 1rem 1.75rem;
     background-color: #FFF;
@@ -40,7 +55,7 @@ img {
 }
 
 .container-fluid {
-    max-width: 1728px;
+    max-width: 1700px;
     margin: 0 auto;
 }
 
@@ -48,8 +63,12 @@ img {
     display: flex;
 }
 
-.ourProducts {
-    padding: 11rem 0;
+.products-section {
+    padding: 10.5rem 0 14rem;
+}
+
+.shop-section {
+    padding: 14.5rem 0 19.75rem;
 }
 
 .flex-column {
@@ -64,25 +83,34 @@ img {
     align-items: center;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
 .justify-content-between {
     justify-content: space-between;
 }
 
-.col-2 {
-    flex-basis: calc(100% * (2 / 12));
+.justify-content-end {
+    justify-content: flex-end;
 }
 
-.col-4 {
-    flex-basis: calc(100% * (4 / 12));
+.col-25 {
+    flex-basis: 25%;
 }
 
-.col-8 {
-    flex-basis: calc(100% * (8 / 12));
+.col-33 {
+    flex-basis: calc(100% / 3);
 }
 
-.col-10 {
-    flex-basis: calc(100% * (10 / 12));
+.col-66 {
+    flex-basis: calc(100% * (2 / 3));
 }
+
+.col-75 {
+    flex-basis: 75%;
+}
+
 
 .text-center {
     text-align: center;

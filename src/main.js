@@ -28,9 +28,14 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(faCartShopping)
+library.add(faChevronLeft)
+library.add(faChevronRight)
+
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

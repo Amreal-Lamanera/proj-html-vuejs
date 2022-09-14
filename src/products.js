@@ -6,7 +6,7 @@ const products = {
     img: [
         require('./assets/choco-chip-cookies-500x638.jpg'),
         require('./assets/cookies-with-ice-cream-500x638.jpg')
-    ]
+    ],
 }
 
 export default products;

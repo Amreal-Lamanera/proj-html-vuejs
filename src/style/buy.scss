@@ -8,29 +8,13 @@
     color: #FFF;
 
     .container-fluid {
-        max-width: 1200px;
+        max-width: 1450px;
         padding: 7.5rem 0;
 
         .col {
             flex-basis: 65%;
         }
 
-        h4 {
-            margin-bottom: 1.75rem;
-            font-size: 0.75rem;
-        }
-
-        h2 {
-            font-weight: 700;
-            // color: $dark-violet;
-            font-size: 3rem;
-            // margin: 0;
-            line-height: 1.25;
-        }
-
-        p {
-            margin: 2.5rem 0;
-        }
     }
 
 }

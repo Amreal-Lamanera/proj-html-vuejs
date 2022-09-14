@@ -4,11 +4,11 @@
             <HeroComponent :content='heroContent' class="hero" />
         </section>
 
-        <section class="ourProducts">
+        <section class="products-section">
             <ProductsComponent :content="products" :smallCar="true" class="products" />
         </section>
 
-        <section class="ourProducts">
+        <section class="shop-section">
             <ProductsComponent :content="shopProducts" :smallCar="false" class="products" />
         </section>
 

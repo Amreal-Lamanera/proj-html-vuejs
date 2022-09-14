@@ -2,15 +2,18 @@
 
     &.gap {
         gap: 6.75rem;
+
+        img {
+            width: calc((100% - 1rem) / 2);
+        }
     }
 
     &.small-gap {
         gap: 4.25rem;
-    }
 
-    h4 {
-        margin-bottom: 1.75rem;
-        font-size: 0.75rem;
+        img {
+            width: calc((100% - 3rem) / 4);
+        }
     }
 
     h3 {
@@ -21,18 +24,59 @@
         line-height: 1.25;
     }
 
-    p {
-        margin: 2.5rem 0;
-    }
-
     .my_btn {
         background-color: $dark-violet;
         color: #FFF;
     }
 
     .carousel {
-        display: flex;
-        gap: 1rem;
+
+        position: relative;
+
+        .img-container {
+            display: flex;
+            gap: 1rem;
+            overflow: hidden;
+            flex-wrap: nowrap;
+
+            .img-desc {
+                position: absolute;
+                bottom: -4.5rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                color: $dark-violet;
+
+                h5 {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                }
+
+                div {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 2.25rem 1rem;
+            background-color: $violet;
+            color: white;
+
+
+            &.next {
+                right: 0;
+            }
+
+            &.prev {
+                left: 0;
+            }
+        }
     }
 
 }
