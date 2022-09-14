@@ -1,11 +1,11 @@
 <template>
-  <header>
+  <header class="d-flex align-items-center px-3 py-2 justify-content-between">
     <div id="header-logo">
         <img src="../assets/avada-bakery-logo.png" alt="Bakery logo">
     </div>
 
     <nav class="nav-list">
-        <ul class="list-wrapper">
+        <ul class="list-wrapper d-flex">
 
             <!-- <li v-for="link,i in headerLinks" :key="i">
 
@@ -15,7 +15,7 @@
 
             <ListComponent :listItems="headerLinks" />
             <li>
-                CARRELLO
+                <font-awesome-icon icon="fa-solid fa-cart-shopping" />
             </li>
 
         </ul>
@@ -39,6 +39,8 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+
+    @import '../style/headerStyle.scss';
 
 </style>

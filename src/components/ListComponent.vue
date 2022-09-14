@@ -1,7 +1,13 @@
 <template>
-    <ul class="list-wrapper">
+    <ul class="list-wrapper d-flex">
 
-        <li v-for="link,i in listItems" :key="i">
+        <li
+            class="list-item"
+            v-for="link,i in listItems"
+            :key="i"
+            :class="i === active ? 'active' : ''"
+            @click="active = i"
+        >
 
             {{ link }}
 
@@ -14,7 +20,12 @@
 export default {
     props: {
         listItems: Array
-    }
+    },
+    data() {
+        return {
+            active: 0
+        }
+    },
 }
 </script>
 

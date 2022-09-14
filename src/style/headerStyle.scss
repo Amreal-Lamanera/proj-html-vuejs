@@ -1,0 +1,21 @@
+@import '../style/variables.scss';
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: $dark-violet;
+
+    .list-wrapper {
+        gap: 1rem;
+
+        .list-item {
+            cursor: pointer;
+
+            &.active {
+                border-bottom: 2px solid $dark-violet;
+            }
+        }
+
+    }
+}
