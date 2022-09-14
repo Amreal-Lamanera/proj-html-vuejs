@@ -8,6 +8,10 @@
             <ProductsComponent :content="products" :smallCar="true" class="products" />
         </section>
 
+        <section class="special-moments text-center">
+            <SpecialMoments />
+        </section>
+
         <section class="shop-section">
             <ProductsComponent :content="shopProducts" :smallCar="false" class="products" />
         </section>
@@ -27,6 +31,7 @@
     import ProductsComponent from './ProductsComponent.vue';
     import products from '../products';
     import shopProducts from '../shopProducts';
+    import SpecialMoments from './SpecialMoments.vue';
     
     export default {
         data() {
@@ -34,14 +39,16 @@
                 heroContent,
                 buyList,
                 products,
-                shopProducts
+                shopProducts,
             }
         },
         components: {
-    HeroComponent,
-    ProductsComponent
-}
+            HeroComponent,
+            ProductsComponent,
+            SpecialMoments
+        }
     }
+    
   </script>
   
   <style lang="scss">
@@ -49,5 +56,16 @@
     @import '../style/heroStyle.scss';
     @import '../style/buy.scss';
     @import '../style/products.scss';
+
+    .special-moments {
+
+        h3 {
+            margin-bottom: 4rem;
+        }
+
+        .d-flex {
+            gap: 6.25rem;
+        }
+    }
 
   </style>
