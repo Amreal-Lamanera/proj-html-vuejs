@@ -4,6 +4,14 @@
             <HeroComponent :content='heroContent' class="hero" />
         </section>
 
+        <section class="ourProducts">
+            <ProductsComponent :content="products" :smallCar="true" class="products" />
+        </section>
+
+        <section class="ourProducts">
+            <ProductsComponent :content="shopProducts" :smallCar="false" class="products" />
+        </section>
+
         <section>
             <HeroComponent :content='buyList' class="buy" />
         </section>
@@ -16,17 +24,23 @@
     import heroContent from '../hero';
     import HeroComponent from './HeroComponent.vue';
     import buyList from '../buyList';
+    import ProductsComponent from './ProductsComponent.vue';
+    import products from '../products';
+    import shopProducts from '../shopProducts';
     
     export default {
         data() {
             return {
                 heroContent,
-                buyList
+                buyList,
+                products,
+                shopProducts
             }
         },
         components: {
-            HeroComponent
-        }
+    HeroComponent,
+    ProductsComponent
+}
     }
   </script>
   
@@ -34,5 +48,6 @@
 
     @import '../style/heroStyle.scss';
     @import '../style/buy.scss';
+    @import '../style/products.scss';
 
   </style>
