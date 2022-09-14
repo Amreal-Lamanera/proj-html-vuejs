@@ -1,13 +1,20 @@
 @import '../style/variables.scss';
 
 header {
+    padding: 1rem 2rem;
     position: absolute;
     top: 0;
     width: 100%;
     color: $dark-violet;
 
+    #header-logo {
+        width: 200px;
+    }
+
     .list-wrapper {
         gap: 1rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
 
         .list-item {
             cursor: pointer;

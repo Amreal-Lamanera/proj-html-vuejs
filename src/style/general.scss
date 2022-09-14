@@ -1,16 +1,11 @@
 @import './variables.scss';
 
 * {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto Slab", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-// html {
-//     overflow-y: scroll;
-//     overflow-y: overlay;
-// }
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -25,6 +20,24 @@
     box-shadow: inset 1rem 1rem rgba(255, 255, 255, 1);
 }
 
+li,
+ul,
+menu {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.my_btn {
+    padding: 1rem 1.75rem;
+    background-color: #FFF;
+    color: $dark-violet;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+}
+
 // #app {
 //     background-color: $--dark;
 //     min-height: 100vh;
@@ -32,12 +45,6 @@
 //     flex-direction: column;
 //     color: #FFF;
 // }
-
-li,
-ul,
-menu {
-    list-style: none;
-}
 
 // .burger {
 //     margin-left: 0.5rem;

@@ -1,5 +1,5 @@
 <template>
-  <header class="d-flex align-items-center px-3 py-2 justify-content-between">
+  <header class="d-flex align-items-center justify-content-between">
     <div id="header-logo">
         <img src="../assets/avada-bakery-logo.png" alt="Bakery logo">
     </div>
