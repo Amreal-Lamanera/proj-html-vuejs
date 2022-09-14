@@ -7,7 +7,6 @@ const headerLinks = [
     'Journal',
     'Contact',
     'My account',
-    'Cart'
 ]
 
 

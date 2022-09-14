@@ -5,7 +5,20 @@
     </div>
 
     <nav class="nav-list">
-        {{ headerLinks }}
+        <ul class="list-wrapper">
+
+            <!-- <li v-for="link,i in headerLinks" :key="i">
+
+
+
+            </li> -->
+
+            <ListComponent :listItems="headerLinks" />
+            <li>
+                CARRELLO
+            </li>
+
+        </ul>
     </nav>
   </header>
 </template> 
@@ -13,14 +26,16 @@
 <script>
 
     import headerLinks from '../headerLinks'
+    import ListComponent from './ListComponent.vue';
 
     export default {
-        data() {
-            return {
-                headerLinks
-            }
-        },
-    }
+    data() {
+        return {
+            headerLinks
+        };
+    },
+    components: { ListComponent }
+}
 
 </script>
 
