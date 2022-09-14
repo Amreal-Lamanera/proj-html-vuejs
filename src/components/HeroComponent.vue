@@ -44,7 +44,7 @@
     .hero {
         background-image: url('../assets/hero-header-bakery.jpg');
         background-color: rgba(255, 255, 255, 0);
-        background-position: center center;
+        background-size: contain;
         background-repeat: no-repeat;
         padding: 18rem 6rem;
 
