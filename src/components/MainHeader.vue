@@ -1,17 +1,11 @@
 <template>
   <header class="d-flex align-items-center justify-content-between">
-    <div id="header-logo">
+    <a id="header-logo" href=".">
         <img src="../assets/avada-bakery-logo.png" alt="Bakery logo">
-    </div>
+    </a>
 
     <nav class="nav-list">
         <ul class="list-wrapper d-flex">
-
-            <!-- <li v-for="link,i in headerLinks" :key="i">
-
-
-
-            </li> -->
 
             <ListComponent :listItems="headerLinks" />
             <li>

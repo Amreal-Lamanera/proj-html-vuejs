@@ -19,7 +19,8 @@ header {
         .list-item {
             cursor: pointer;
 
-            &.active {
+            &.active,
+            &:hover {
                 border-bottom: 2px solid $dark-violet;
             }
         }

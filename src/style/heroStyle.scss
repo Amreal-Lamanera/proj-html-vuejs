@@ -1,0 +1,31 @@
+@import '../style/variables.scss';
+
+.hero {
+    background-image: url('../assets/hero-header-bakery.jpg');
+    background-color: rgba(255, 255, 255, 0);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 18rem 0;
+
+    .col {
+        flex-basis: calc(100% / 4);
+    }
+
+    h4 {
+        margin-bottom: 1.75rem;
+        font-size: 0.75rem;
+    }
+
+    h2 {
+        font-weight: 700;
+        color: $dark-violet;
+        font-size: 3rem;
+        margin: 0;
+        line-height: 1.25;
+    }
+
+    p {
+        margin: 2.5rem 0;
+    }
+}
