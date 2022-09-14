@@ -5,7 +5,7 @@
         </section>
 
         <section>
-            <HeroComponent :content='products' class="products" />
+            <HeroComponent :content='buyList' class="buy" />
         </section>
 
     </div>
@@ -15,13 +15,13 @@
 
     import heroContent from '../hero';
     import HeroComponent from './HeroComponent.vue';
-    import products from '../products';
+    import buyList from '../buyList';
     
     export default {
         data() {
             return {
                 heroContent,
-                products
+                buyList
             }
         },
         components: {
@@ -33,6 +33,6 @@
   <style lang="scss">
 
     @import '../style/heroStyle.scss';
-    @import '../style/products.scss';
+    @import '../style/buy.scss';
 
   </style>
