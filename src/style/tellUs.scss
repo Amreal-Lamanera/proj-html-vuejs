@@ -1,0 +1,61 @@
+.first {
+    background-image: url('../assets/bakery-process-1.jpg');
+}
+
+.third {
+    background-image: url('../assets/bakery-process-3.jpg');
+}
+
+.second {
+    background-image: url('../assets/bakery-process-2.jpg');
+
+    .container {
+        padding: 4.5rem;
+        height: auto;
+        gap: 16rem;
+
+        .d-flex {
+            gap: 23.75rem;
+        }
+    }
+
+    .layover {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), hsla(0, 0%, 41%, 0.6))
+    }
+}
+
+.first,
+.second,
+.third {
+    background-size: cover;
+    position: relative;
+
+    *:not([class='layover']) {
+        color: white;
+        z-index: 1;
+    }
+}
+
+.container {
+    padding: 6.5rem;
+    height: 38rem;
+    gap: 22.25rem;
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    strong {
+        font-weight: lighter;
+        font-size: 5rem;
+    }
+}

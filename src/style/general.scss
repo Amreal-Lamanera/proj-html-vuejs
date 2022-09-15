@@ -90,8 +90,8 @@ p {
     align-items: center;
 }
 
-.align-items-center {
-    align-items: center;
+.align-items-end {
+    align-items: flex-end;
 }
 
 .justify-content-between {
@@ -122,9 +122,17 @@ p {
     flex-basis: 75%;
 }
 
-
 .text-center {
     text-align: center;
+}
+
+.layover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), hsla(264, 57%, 40%, 0.5))
 }
 
 // #app {

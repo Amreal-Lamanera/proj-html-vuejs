@@ -15,6 +15,10 @@
         <section class="shop-section">
             <ProductsComponent :content="shopProducts" :smallCar="false" class="products" />
         </section>
+        
+                <section>
+                    <TellUs />
+                </section>
 
         <section>
             <HeroComponent :content='buyList' class="buy" />
@@ -32,6 +36,7 @@
     import products from '../products';
     import shopProducts from '../shopProducts';
     import SpecialMoments from './SpecialMoments.vue';
+    import TellUs from './TellUs.vue';
     
     export default {
         data() {
@@ -43,12 +48,13 @@
             }
         },
         components: {
-            HeroComponent,
-            ProductsComponent,
-            SpecialMoments
-        }
+    HeroComponent,
+    ProductsComponent,
+    SpecialMoments,
+    TellUs
+}
     }
-    
+
   </script>
   
   <style lang="scss">
