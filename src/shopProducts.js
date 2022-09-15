@@ -8,7 +8,10 @@ const shopProducts = {
         require('./assets/cookies-with-ice-cream-400x510.jpg'),
         require('./assets/strawberry-donut-400x510.jpg'),
         require('./assets/perfect-macarons-400x510.jpg'),
-        require('./assets/perfect-macarons-400x510.jpg')
+        require('./assets/blackberry-stuffed-bread-400x510.jpg'),
+        require('./assets/cherry-cake-400x510.jpg'),
+        require('./assets/glazed-pancake-with-lemon-400x510.jpg'),
+        require('./assets/home-bread-400x510.jpg'),
     ],
     imgDesc: [
         {

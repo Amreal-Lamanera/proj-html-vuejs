@@ -45,7 +45,6 @@
 
         .card {
             padding: 1rem;
-            aspect-ratio: 1;
             background-color: #FFF;
             cursor: pointer;
             display: flex;
@@ -53,6 +52,7 @@
             font-size: 0.75rem;
             box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
             width: 5rem;
+            height: 5rem;
             position: relative;
             overflow: hidden;
 

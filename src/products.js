@@ -5,7 +5,9 @@ const products = {
     btn: 'Buy Avada Today!',
     img: [
         require('./assets/choco-chip-cookies-768x979.jpg'),
-        require('./assets/cookies-with-ice-cream-768x979.jpg')
+        require('./assets/cookies-with-ice-cream-768x979.jpg'),
+        require('./assets/blackberry-stuffed-bread-800x1020.jpg'),
+        require('./assets/cherry-cake-800x1020.jpg'),
     ],
 }
 
