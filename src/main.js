@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import "@fontsource/roboto-slab"
+import "@fontsource/roboto/100.css"
 
 // BOOTSTRAP START
 
