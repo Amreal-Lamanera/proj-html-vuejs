@@ -17,7 +17,7 @@
 
         <div class="d-flex container-fluid" v-else>
             <div class="col-50 d-flex flex-column" v-for="img,i in content.img" :key="i">
-                <img :src="img" alt="">
+                <img :src="img" alt="" class="zoom">
                 <div class="where d-flex flex-column justify-content-center">
                     <h3>
                         {{ content.location[i].title}}
@@ -76,9 +76,22 @@
     .where {
         background-color: $light-gold;
         padding: 3.75rem 4.5rem;
+        z-index: 1;
 
         h3 {
             margin-bottom: 2rem;
+        }
+    }
+
+    .col-50 {
+        overflow: hidden;
+        
+        .zoom:hover {
+            transform: scale3d(1.1,1.1,1.1);
+        }
+        
+        .zoom{
+            transition: 500ms ease-in-out;
         }
     }
 

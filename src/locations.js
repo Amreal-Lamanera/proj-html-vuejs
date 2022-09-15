@@ -2,8 +2,8 @@ const locations = {
     subTitle: 'LOCATIONS',
     title: 'Visit our Bakeries',
     img: [
-        require('./assets/london-bk-1200x794.jpg'),
         require('./assets/new-york-bk-1200x794.jpg'),
+        require('./assets/london-bk-1200x794.jpg'),
     ],
     location: [
         {

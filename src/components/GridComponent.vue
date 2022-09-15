@@ -17,7 +17,9 @@
                 </div>
             </div>
 
-            <img v-else :src="socials.img[i-1]" alt="">
+            <div v-else class="no-over">
+                <img :src="socials.img[i-1]" alt="" class="zoom">
+            </div>
         </div>
 
     </div>
@@ -44,6 +46,18 @@
         grid-template-columns: repeat(4, 1fr);
         margin-bottom: 10.25rem;
         gap: 2.25rem;
+        
+        .zoom:hover {
+            transform: scale3d(1.05,1.05,1.05);
+        }
+        
+        .no-over {
+            overflow: hidden;
+            
+            .zoom{
+                transition: 500ms ease-in-out;
+            }
+        }
 
         .span-2 {
             grid-column: span 2;
