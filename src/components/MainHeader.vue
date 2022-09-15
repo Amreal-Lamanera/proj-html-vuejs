@@ -1,6 +1,6 @@
 <template>
   <header class="d-flex align-items-center justify-content-between">
-    <a id="header-logo" href=".">
+    <a class="logo" href=".">
         <img src="../assets/avada-bakery-logo.png" alt="Bakery logo">
     </a>
 
