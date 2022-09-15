@@ -31,11 +31,13 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
 library.add(faCartShopping)
 library.add(faChevronLeft)
 library.add(faChevronRight)
+library.add(faInstagram)
 
 
 /* add font awesome icon component */

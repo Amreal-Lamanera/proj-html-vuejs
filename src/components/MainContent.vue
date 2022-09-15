@@ -25,6 +25,10 @@
         </section>
 
         <section>
+            <GridComponent />
+        </section>
+
+        <section>
             <HeroComponent :content='buyList' class="buy" />
         </section>
 
@@ -43,6 +47,7 @@
     import TellUs from './TellUs.vue';
     import specialMoments from '../specialMoments';
     import locations from '../locations';
+    import GridComponent from './GridComponent.vue';
     
     export default {
         data() {
@@ -57,11 +62,12 @@
             }
         },
         components: {
-    HeroComponent,
-    ProductsComponent,
-    AboutUs,
-    TellUs,
-}
+            HeroComponent,
+            ProductsComponent,
+            AboutUs,
+            TellUs,
+            GridComponent
+        }
     }
 
   </script>
