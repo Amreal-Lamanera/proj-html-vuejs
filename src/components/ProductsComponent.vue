@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex container-fluid" :class="smallCar ? 'gap' : 'small-gap'">
-        <div class="d-flex flex-column" :class="smallCar? 'col-33' : 'col-25 align-items-center text-center justify-content-end'">
+        <div class="d-flex flex-column" :class="smallCar? 'col-33 align-items-start' : 'col-25 align-items-center text-center justify-content-end'">
             <h4 v-if="content.subTitle">
                 {{ content.subTitle}}
             </h4>
@@ -13,7 +13,7 @@
                 {{ content.para}}
             </p>
 
-            <div class="my_btn">
+            <div class="my_btn violet">
                 {{ content.btn }}
             </div>
         </div>

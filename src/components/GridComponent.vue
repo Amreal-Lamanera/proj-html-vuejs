@@ -11,7 +11,7 @@
                     {{ socials.title }}
                 </h3>
 
-                <div class="my_btn d-flex alidn-items-center">
+                <div class="my_btn violet d-flex alidn-items-center">
                     <font-awesome-icon :icon="socials.btn[0]" class="fa" />
                     {{ socials.btn[1]}}
                 </div>
@@ -53,15 +53,9 @@
                 margin-bottom: 1.75rem;
             }
 
-            .my_btn {
-                background-color: $dark-violet;
-                color: white;
-                // padding: 0.5rem 1rem;
-
-                .fa {
-                    font-size: 1rem;
-                    margin-right: 0.5rem;
-                }
+            .fa {
+                font-size: 1rem;
+                margin-right: 0.5rem;
             }
         }
     }

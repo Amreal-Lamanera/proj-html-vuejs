@@ -3,6 +3,7 @@
     <MainHeader />
     <MainContent />
     <MainFooter />
+    <BuyTheme />
   </div>
 </template>
 
@@ -11,13 +12,15 @@
   import MainHeader from './components/MainHeader.vue';
   import MainContent from './components/MainContent.vue';
   import MainFooter from './components/MainFooter.vue';
+  import BuyTheme from './components/BuyTheme.vue';
 
   export default {
     name: 'App',
     components: {
       MainHeader,
       MainContent,
-      MainFooter
+      MainFooter,
+      BuyTheme
     }
   }
 

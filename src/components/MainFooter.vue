@@ -38,7 +38,7 @@
                 <div class="email">
                     <input type="email" placeholder="Enter email address*">
                 </div>
-                <div class="my_btn">
+                <div class="my_btn violet">
                     Subscribe
                 </div>
             </div>
@@ -133,11 +133,6 @@
                         width: 80%;
                         height: 100%;
                     }
-                }
-
-                .my_btn {
-                    background-color: $dark-violet;
-                    color: #FFF;
                 }
 
             }

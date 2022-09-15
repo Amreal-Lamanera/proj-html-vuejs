@@ -63,6 +63,18 @@ p {
     border-radius: 0.5rem;
     font-size: 0.75rem;
     cursor: pointer;
+
+    &:hover,
+    &.violet {
+        background-color: $dark-violet;
+        color: #FFF;
+    }
+
+    &.violet:hover {
+        background-color: $light-blue;
+        border: 1px solid $light-grey;
+        color: $dark-violet;
+    }
 }
 
 .container-fluid {
