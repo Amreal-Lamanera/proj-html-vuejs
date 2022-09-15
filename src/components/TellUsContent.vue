@@ -1,5 +1,5 @@
 <template>
-    <div class="" :class="index === 1 ? 'first container-fluid' : index === 2 ? 'second' : 'third'">
+    <div class="" :class="index === 1 ? 'first container-fluid' : index === 2 ? 'second' : 'third container-fluid'">
         <div class="container d-flex">
             
             <div class="" :class="index === 2 ? 'd-flex flex-column' : 'col-50'">

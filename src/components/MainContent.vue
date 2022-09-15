@@ -9,16 +9,20 @@
         </section>
 
         <section class="special-moments text-center">
-            <SpecialMoments />
+            <AboutUs :content="specialMoments" />
         </section>
 
         <section class="shop-section">
             <ProductsComponent :content="shopProducts" :smallCar="false" class="products" />
         </section>
         
-                <section>
-                    <TellUs />
-                </section>
+        <section>
+            <TellUs />
+        </section>
+
+        <section class="locations text-center">
+            <AboutUs :content="locations" />
+        </section>
 
         <section>
             <HeroComponent :content='buyList' class="buy" />
@@ -35,8 +39,10 @@
     import ProductsComponent from './ProductsComponent.vue';
     import products from '../products';
     import shopProducts from '../shopProducts';
-    import SpecialMoments from './SpecialMoments.vue';
+    import AboutUs from './AboutUs.vue';
     import TellUs from './TellUs.vue';
+    import specialMoments from '../specialMoments';
+    import locations from '../locations';
     
     export default {
         data() {
@@ -45,13 +51,16 @@
                 buyList,
                 products,
                 shopProducts,
+                specialMoments,
+                locations,
+
             }
         },
         components: {
     HeroComponent,
     ProductsComponent,
-    SpecialMoments,
-    TellUs
+    AboutUs,
+    TellUs,
 }
     }
 
@@ -72,6 +81,10 @@
         .d-flex {
             gap: 6.25rem;
         }
+    }
+
+    .locations {
+        padding: 12rem 0;
     }
 
   </style>

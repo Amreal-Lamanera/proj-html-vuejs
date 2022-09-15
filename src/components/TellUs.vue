@@ -20,7 +20,7 @@
                 </h4>
             </div>
         </div>
-
+        
         <TellUsContent :index="3" />
 
     </div>
@@ -66,6 +66,10 @@
             h4 {
                 font-weight: normal;
                 margin: 0;
+            }
+
+            h4:last-child {
+                font-size: 1rem;
             }
         }
     }
