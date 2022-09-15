@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <main>
         <section>
             <HeroComponent :content='heroContent' class="hero" />
         </section>
@@ -32,7 +32,7 @@
             <HeroComponent :content='buyList' class="buy" />
         </section>
 
-    </div>
+    </main>
   </template>
   
   <script>
