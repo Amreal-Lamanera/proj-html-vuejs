@@ -11,8 +11,8 @@
                     {{ socials.title }}
                 </h3>
 
-                <div class="my_btn">
-                    <font-awesome-icon :icon="socials.btn[0]" />
+                <div class="my_btn d-flex alidn-items-center">
+                    <font-awesome-icon :icon="socials.btn[0]" class="fa" />
                     {{ socials.btn[1]}}
                 </div>
             </div>
@@ -58,7 +58,10 @@
                 color: white;
                 // padding: 0.5rem 1rem;
 
-                
+                .fa {
+                    font-size: 1rem;
+                    margin-right: 0.5rem;
+                }
             }
         }
     }
