@@ -119,10 +119,6 @@
                 color: $dark-violet;
                 margin-bottom: 1rem;
 
-                & * {
-                    cursor: pointer;
-                }
-
                 .cart-count {
                     margin-left: -1.5rem;
                     background-color: $light-grey;

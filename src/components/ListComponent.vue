@@ -31,4 +31,21 @@ export default {
 
 <style lang="scss" scoped>
 
+    @import '../style/variables.scss';
+
+    .list-wrapper {
+        gap: 1rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+
+        .list-item {
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                border-bottom: 1px solid $dark-violet;
+            }
+        }
+    }
+
 </style>

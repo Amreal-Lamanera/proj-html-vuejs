@@ -8,13 +8,12 @@ header {
     color: $dark-violet;
 
     .list-wrapper {
-        gap: 1rem;
-        font-size: 0.75rem;
-        text-transform: uppercase;
 
         .list-item {
-            cursor: pointer;
-            position: relative;
+
+            &:hover {
+                border-bottom: none !important;
+            }
 
             &.active::before,
             &:hover::before {
