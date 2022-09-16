@@ -1,9 +1,10 @@
 <template>
-  <div id="app" ref="app">
+  <div id="app">
     <MainHeader />
     <MainContent />
     <MainFooter />
     <BuyTheme />
+    <ScrollTop />
   </div>
 </template>
 
@@ -13,32 +14,17 @@
   import MainContent from './components/MainContent.vue';
   import MainFooter from './components/MainFooter.vue';
   import BuyTheme from './components/BuyTheme.vue';
+import ScrollTop from './components/ScrollTop.vue';
 
   export default {
     name: 'App',
-    data() {
-      return {
-        scroll: 0,
-      }
-    },
     components: {
-      MainHeader,
-      MainContent,
-      MainFooter,
-      BuyTheme
-    },
-    methods: {
-            scrollHandler() {
-                console.dir(this.$refs.app);
-                console.log(this.scroll);
-            },
-        },
-        mounted() {
-            this.$nextTick(() => {
-                window.addEventListener('scroll', this.scrollHandler);
-                this.scroll = this.$refs.app.scrollTop;
-            })
-        },
+    MainHeader,
+    MainContent,
+    MainFooter,
+    BuyTheme,
+    ScrollTop
+},
   }
 
 </script>

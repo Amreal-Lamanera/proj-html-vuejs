@@ -16,6 +16,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
@@ -26,6 +27,7 @@ import { faPinterestP } from '@fortawesome/free-brands-svg-icons'
 library.add(faCartShopping)
 library.add(faChevronLeft)
 library.add(faChevronRight)
+library.add(faChevronUp)
 library.add(faInstagram)
 library.add(faTwitter)
 library.add(faFacebookF)
