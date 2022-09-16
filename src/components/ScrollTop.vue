@@ -50,12 +50,13 @@ export default {
     .scroll-btn {
         position: fixed;
         bottom: 2rem;
-        right: 5rem;
+        right: 4rem;
         background-color: rgba(0, 0, 0, 0.7);
         padding: 0.75rem;
         border-radius: 0.5rem;
         display: none;
         color: #FFF;
+        font-size: 0.75rem;
         cursor: pointer;
         z-index: 9999;
     }
