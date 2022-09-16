@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" ref="app">
     <MainHeader />
     <MainContent />
     <MainFooter />
@@ -16,12 +16,29 @@
 
   export default {
     name: 'App',
+    data() {
+      return {
+        scroll: 0,
+      }
+    },
     components: {
       MainHeader,
       MainContent,
       MainFooter,
       BuyTheme
-    }
+    },
+    methods: {
+            scrollHandler() {
+                console.dir(this.$refs.app);
+                console.log(this.scroll);
+            },
+        },
+        mounted() {
+            this.$nextTick(() => {
+                window.addEventListener('scroll', this.scrollHandler);
+                this.scroll = this.$refs.app.scrollTop;
+            })
+        },
   }
 
 </script>

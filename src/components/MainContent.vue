@@ -58,16 +58,30 @@
                 shopProducts,
                 specialMoments,
                 locations,
+                // scroll: window.scrollY,
 
             }
         },
+        // methods: {
+        //     scrollHandler() {
+        //         this.scroll = window.scrollY;
+        //         if(this.scroll > 800) window.scrollY = 0
+        //         console.log();
+        //     },
+        // },
+        // mounted() {
+        //     this.$nextTick(() => {
+        //         window.addEventListener('scroll', this.scrollHandler);
+        //         this.scroll = window.scrollY;
+        //     })
+        // },
         components: {
             HeroComponent,
             ProductsComponent,
             AboutUs,
             TellUs,
             GridComponent
-        }
+        },
     }
 
   </script>
