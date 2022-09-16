@@ -91,6 +91,27 @@
         .col-50 {
             gap: 3rem;
 
+            .socials {
+                .list-wrapper{
+                    font-size: 1.5rem;
+                    gap: 1rem;
+
+                    li{
+                        width: 3rem;
+                        height: 3rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:hover {
+                            background-color: $dark-violet;
+                            color: #FFF;
+                            border-radius: 0.5rem;
+                        }
+                    }
+                }
+            }
+
             .list-wrapper {
                 gap: 2rem;
                 font-size: 0.75rem;
