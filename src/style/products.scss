@@ -3,8 +3,17 @@
     &.gap {
         gap: 6.75rem;
 
-        img {
-            width: calc((100% - 1rem) / 2);
+        .col-66 {
+
+            .carousel {
+                overflow: hidden;
+                height: 666px;
+                width: 100%;
+
+                img {
+                    width: calc((100% - 1rem) / 2);
+                }
+            }
         }
 
     }
@@ -14,27 +23,27 @@
 
         .carousel {
             .img-container {
-                img {
-                    width: calc((100% - 3rem) / 4);
+                .img-wrapper {
+                    flex-basis: calc((100% - 3rem) / 4);
+                    flex-shrink: 0;
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
 
-    }
+        .col-75 {
+            .carousel {
+                overflow: hidden;
+                height: 450px;
+                width: 100%;
 
-    .col-66 {
-        .p-rel {
-            overflow: hidden;
-            height: 666px;
-            width: 100%;
-        }
-    }
-
-    .col-75 {
-        .p-rel {
-            overflow: hidden;
-            height: 375px;
-            width: 100%;
+                .layover {
+                    bottom: calc(1.5rem + 0.75rem + 1rem);
+                }
+            }
         }
     }
 
@@ -46,19 +55,52 @@
             position: absolute;
             flex-wrap: nowrap;
             transition: all 300ms ease-in-out;
+            width: 100%;
 
-            img {
+            .img-wrapper {
                 width: calc((100% - 1.5rem) / 2);
+                flex-shrink: 0;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 100%;
+                }
+
+                .layover {
+                    opacity: 0;
+                    transition: all 300ms;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    color: #FFF;
+                    cursor: pointer;
+
+                    h5 {
+                        font-size: 1.5rem;
+                    }
+
+                    strong {
+                        font-size: 1.5rem;
+                        font-weight: normal;
+                    }
+                }
+
+                &:hover .layover {
+                    opacity: 1;
+                }
             }
 
             .img-desc {
-                position: absolute;
-                bottom: -4.5rem;
-                width: 100%;
                 display: flex;
-                justify-content: space-around;
+                flex-direction: column;
                 text-align: center;
                 color: $dark-violet;
+                margin-top: 1rem;
+                line-height: 1;
 
                 h5 {
                     font-size: 1rem;

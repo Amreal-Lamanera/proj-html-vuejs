@@ -24,19 +24,28 @@
                     <font-awesome-icon icon="fa-solid fa-chevron-left"/>
                 </div>
                 <div class="img-container" ref="carousel">
-                    <img v-for="img,i in content.img" :key="i" :src="img" alt="">
-                    <template v-if="content.imgDesc">
-                        <div class="img-desc">
-                            <div v-for="desc,i in content.imgDesc" :key="1000-i">
-                                <h5>
-                                    {{ desc.name }}
-                                </h5>
-                                <div>
-                                    {{ desc.price }}
-                                </div>
+                    <div class="img-wrapper" v-for="img,i in content.img" :key="i">
+                        <img :src="img.src" alt="">
+                        <div class="img-desc" v-if="!smallCar">
+                            <h5>
+                                {{ img.name }}
+                            </h5>
+                            <div>
+                                {{ img.price }}
                             </div>
                         </div>
-                    </template>
+                        <div class="layover">
+                            <h5>
+                                {{ img.name}}
+                            </h5>
+                            <span>
+                                {{ img.desc }}
+                            </span>
+                            <strong>
+                                {{ img.price }}
+                            </strong>
+                        </div>
+                    </div>
                 </div>
                 <div class="arrow next" @click="smallCar ? move(1) : smallMove(1)" ref="next">
                     <font-awesome-icon icon="fa-solid fa-chevron-right"/>
