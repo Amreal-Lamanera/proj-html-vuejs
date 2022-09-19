@@ -1,3 +1,5 @@
+<!-- Sezione a griglia -->
+
 <template>
     <div class="container-fluid grid">
 

@@ -1,3 +1,5 @@
+<!-- Contenuto della sezione delle ordinazioni -->
+
 <template>
     <div class="" :class="index === 1 ? 'first container-fluid' : index === 2 ? 'second' : 'third container-fluid'">
         <div class="container d-flex">

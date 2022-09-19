@@ -1,3 +1,5 @@
+<!-- Macro-componente principale/main -->
+
 <template>
     <main>
         <section>

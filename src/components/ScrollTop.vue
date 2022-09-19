@@ -1,3 +1,5 @@
+<!-- Pulsante per tornare in testa alla pagina -->
+
 <template>
   <div class="scroll-btn" ref="btn" @click="goTop">
     <font-awesome-icon icon="fa-solid fa-chevron-up"/>

@@ -1,3 +1,5 @@
+<!-- Macro-componente intestazione/header -->
+
 <template>
   <header class="d-flex align-items-center justify-content-between">
     <a class="logo" href=".">

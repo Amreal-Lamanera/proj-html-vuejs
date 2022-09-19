@@ -1,3 +1,5 @@
+<!-- Sezioni in risalto/hero -->
+
 <template>
     <div>
         <div class="container-fluid">

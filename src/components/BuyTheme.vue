@@ -1,3 +1,5 @@
+<!-- Pulsanti di acquisto tema -->
+
 <template>
     <div class="buy-wrapper d-flex flex-column">
         <div class="card">

@@ -1,3 +1,5 @@
+<!-- Macro componente piè di pagina/footer -->
+
 <template>
     <footer class="d-flex">
         

@@ -19,12 +19,12 @@ import ScrollTop from './components/ScrollTop.vue';
   export default {
     name: 'App',
     components: {
-    MainHeader,
-    MainContent,
-    MainFooter,
-    BuyTheme,
-    ScrollTop
-},
+      MainHeader,
+      MainContent,
+      MainFooter,
+      BuyTheme,
+      ScrollTop
+    },
   }
 
 </script>

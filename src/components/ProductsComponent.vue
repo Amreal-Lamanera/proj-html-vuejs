@@ -1,3 +1,5 @@
+<!-- Our products con 2 varianti a seconda della grandezza del carosello -->
+
 <template>
     <div class="d-flex container-fluid" :class="smallCar ? 'gap' : 'small-gap'">
         <div class="d-flex flex-column" :class="smallCar? 'col-33 align-items-start' : 'col-25 align-items-center text-center justify-content-end'">

@@ -1,3 +1,5 @@
+<!-- Baking special moments & Our Bakeries -->
+
 <template>
     <div>
 
@@ -9,12 +11,14 @@
             {{ content.title }}
         </h3>
 
+        <!-- SE NON è presente una descrizione -->
         <div class="d-flex container-fluid" v-if="!content.location">
             <div class="col-50" v-for="img,i in content.img" :key="i">
                 <img :src="img" alt="">
             </div>
         </div>
 
+        <!-- ALTRIMENTI -->
         <div class="d-flex container-fluid" v-else>
             <div class="col-50 d-flex flex-column" v-for="img,i in content.img" :key="i">
                 <img :src="img" alt="" class="zoom">

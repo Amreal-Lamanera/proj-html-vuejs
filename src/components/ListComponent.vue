@@ -1,3 +1,5 @@
+<!-- Componenti liste di link -->
+
 <template>
     <ul class="list-wrapper d-flex">
 
@@ -8,8 +10,10 @@
             :class="i === active ? 'active' : ''"
             @click="active = i"
         >
-
-            {{ link }}
+        
+            <a href="#nogo">
+                {{ link }}
+            </a>
 
         </li>
 
