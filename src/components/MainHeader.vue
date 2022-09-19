@@ -39,4 +39,8 @@
 
     @import '../style/headerStyle.scss';
 
+    .list-wrapper {
+        gap: 1rem;
+    }
+
 </style>
